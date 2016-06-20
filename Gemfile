@@ -30,7 +30,7 @@ gem 'turbolinks'
 gem 'fog',  '1.38.0'
 gem 'simple_form', '~> 3.0.2'
 gem 'devise', '~> 3.4.1'
- 
+
 
 # Use font awesome library for icon
 #gem 'font-awesome-sass','~> 4.2.0'
