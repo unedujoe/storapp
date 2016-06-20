@@ -1,10 +1,28 @@
-<% @docs.each do |doc| %>
-<%= link_to doc.title, doc %>
-<br/>
-<%= time_ago_in_words(doc.created_at) %>
-<br/>
-<%= truncate(doc.content, lenght:20) %>
-<br/>
-<% end %>
 
-<%= link_to "Create Doc", new_doc_path %>
+<% @docs.each do |doc| %>
+<div class="row">
+      <div class="well">
+    <div class="col-md-4 col-md-offset-4 center">
+        <%= link_to doc.title, doc %>
+    </div>   
+        <br/>
+    <div class="col-md-4 col-md-offset-4 center">
+        <%= time_ago_in_words(doc.created_at) %>
+    </div>
+        <br/>
+    <div class="col-md-4 col-md-offset-4 center">
+        <%= truncate(doc.content, lenght:20) %>
+        <br/>
+        </div>
+    </div>
+    
+<% end %>
+</div>
+
+<div class="col-md-4 col-md-offset-4 center">
+    <div class="well">
+     <h2> Create Doc! </h2>
+    <p>Start Creating Document and Organizing your Life!</p>
+    <%= link_to "Create Doc", new_doc_path %>
+     </div>
+</div>
