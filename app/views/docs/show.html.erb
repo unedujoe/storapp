@@ -4,7 +4,6 @@
 </h1>
 <br/>
 <%= @doc.content %>
-<br/>
-<%= link_to "All Docs", docs_path %>
-<%= link_to "Fix Doc", edit_doc_path(@doc) %>
-<%= link_to "Trash It", doc_path(@doc), method: :delete, data: {confirm: "Are you sure?" } %>
+<br/><br/>
+<%= link_to "Fix Doc", edit_doc_path(@doc), class: 'btn btn-primary navbar-primary' %>
+<%= link_to "Trash It", doc_path(@doc),class: 'btn btn-primary navbar-primary', method: :delete, data: {confirm: "Are you sure?" } %>

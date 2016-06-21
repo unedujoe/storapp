@@ -1,4 +1,23 @@
 <h1>Fix Doc</h1>
 
-<%= render "form" %>
+<%= simple_form_for @doc do |f| %>
+ 
+<div class="col-md-4 col-md-offset-4">
+  <div class="form-group">
+       <%= f.label :title %>
+       <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  
+  <div class="form-group">
+        <%= f.label :content %>
+        <%= f.text_area :content,rows: 10,  class: 'form-control' %>
+  </div>
+    
+   <div class="form-group">
+        <%= f.submit "Update Doc", class: 'btn btn-primary' %>
+   </div>
+ </div>
+ <% end %>
+
+    
 <%= link_to "Cancel", doc_path %>
