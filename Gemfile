@@ -9,6 +9,7 @@ group  :development, :test do
     gem 'sqlite3'
     gem 'pry'
 end
+gem 'puma'
 
 # Use postgresql as the database for production
 group:production do
